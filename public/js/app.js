@@ -15,8 +15,8 @@ fetch('/weather?address='+location).then((response)=>{
         if(data.error){
          return  messageOne.textContent=data.error;
         }
-        messageOne.textContent=data.forecast;
-        messageTwo.textContent=data.location;
+        messageOne.textContent=data.location;
+        messageTwo.textContent=data.forecast;
 
     })
 })
